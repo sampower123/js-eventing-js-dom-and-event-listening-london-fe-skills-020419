@@ -18,21 +18,27 @@
       const input = document.querySelector('input')
       input.addEventListener('keydown', e => console.log(e.which))
       
-      
-      
-    </script>
-  </head>
-
-  <body>
-    <main id="main">My ID is "main"!</main>
-
-    <br />
-
-    <div>
-      <label>Input:</label><input />
-    </div>
-
-    <br />
+      const input = document.querySelector('input')
+ 
+  input.addEventListener('keydown', e => {
+    if (e.which === 71) {
+      return e.preventDefault()
+    }
+  })
+        
+      </script>
+    </head>
+  
+    <body>
+      <main id="main">My ID is "main"!</main>
+  
+      <br />
+  
+      <div>
+        <label>Input:</label><input />
+      </div>
+  
+      <br />
 
     <div>
       1
